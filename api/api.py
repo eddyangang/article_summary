@@ -1,15 +1,7 @@
 from flask import Flask, jsonify, request
 from scrape import scrapeAndSummarize
 import json
-app = Flask(__name__, static_folder='../build', static_url_path='/')
-# article = scrapeAndSummarize('https://www.nytimes.com/2020/09/24/us/politics/trump-republicans-election-transition.html')
-# print(article.summary)
-
-@app.route('/api', methods=['GET'])
-def api():
-    return {
-        "get": "hello"
-    }
+app = Flask(__name__)
 
 @app.route('/summarize', methods=['POST'])
 def summarize():
