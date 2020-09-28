@@ -27,7 +27,6 @@ def summarize():
         "text": article.text,
         "summary": article.summary,
         "title": article.title,
-        "image": article.top_image,
         "videos": article.movies,
         "keywords": article.keywords
     })
