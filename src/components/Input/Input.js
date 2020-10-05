@@ -1,6 +1,8 @@
 import React, { useRef, useContext} from 'react'
 import { Form, Container, Segment } from 'semantic-ui-react'
 import AppContext from '../../Context/AppContext';
+import Description from "../Description/Description"
+import "./Input.css"
 export default function Input() {
     const { url, seturl } = useContext(AppContext)
     const input = useRef();
@@ -11,8 +13,9 @@ export default function Input() {
         console.log("url", url);
     }
     return (
-    <Container>
+    <Container className= "topMargin">
         <Segment>
+          <Description/>
           <Form>
             <Form.Field>
                     <label>News Article URL</label>

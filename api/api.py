@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from api.scrape import scrapeAndSummarize
+from scrape import scrapeAndSummarize
 import json
 import os
 

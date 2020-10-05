@@ -1,10 +1,10 @@
 import React from 'react'
-import { Header, Segment } from 'semantic-ui-react'
+import { Segment, Image } from 'semantic-ui-react'
 import "./Navbar.css"
 export default function Navbar() {
     return (
         <Segment className="removeMargin">
-            <Header as='h1'  textAlign='center'>Summarize</Header>
+            <Image src='./assets/logo.PNG' size={"large"} centered/>
         </Segment>
     )
 }

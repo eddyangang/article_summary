@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import BannerPhoto from "./components/BannerPhoto/BannerPhoto"
 import Navbar from "./components/Navbar/Navbar"
-import Description from "./components/Description/Description"
 import URLInput from "./components/Input/Input"
 import AppContext from "./Context/AppContext"
 import Article from "./components/Article/Article"
@@ -33,7 +32,6 @@ function App() {
       <AppContext.Provider value={{url, seturl, article}}>
         <Navbar/>
         <BannerPhoto/>
-        <Description/>
         <URLInput/>
         {article.summary ? <Article/> : null}
       </AppContext.Provider>
